@@ -13,7 +13,7 @@ let promptEvent;addEventListener('beforeinstallprompt',e=>{e.preventDefault();pr
 function online(){offline.hidden=navigator.onLine}addEventListener('online',online);addEventListener('offline',online);online();if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
 
 // Canção de ninar original do Rafael, com controle de ativar e desativar.
-const lullaby = new Audio('./cancao-de-ninar-rafael.wav');
+const lullaby = new Audio('./pequeno_leao_do_rafael.wav');
 lullaby.loop = true;
 lullaby.preload = 'auto';
 lullaby.volume = 0.42;
