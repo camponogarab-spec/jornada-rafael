@@ -1,6 +1,6 @@
-# A Jornada do Rafael - canção de ninar animadinha
+# A Jornada do Rafael
 
-Versão pronta para GitHub Pages, com música original infantil, natureza, pássaros, elefante e rugidos distantes de leão. A trilha está um pouco mais animada, mas mantém o caráter acolhedor de canção de ninar.
+Aplicativo PWA responsivo para acompanhar a gestação do Rafael, com atualização automática da idade gestacional, desenvolvimento semanal, compartilhamento pelo WhatsApp e canção de ninar com tema de natureza e safari.
 
-## Atualização
-Envie todos os arquivos diretamente para a raiz do repositório `jornada-rafael` e confirme em **Commit changes**. Aguarde a publicação no GitHub Pages.
+## Publicação
+Envie todos os arquivos desta pasta diretamente para a raiz do repositório `jornada-rafael`. O GitHub Pages publicará a atualização automaticamente a partir da branch `main`.
