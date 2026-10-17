@@ -8,7 +8,7 @@ percent.textContent=progress.toFixed(1).replace('.',',')+'% do caminho';bar.styl
 function render(){const x=data.find(x=>selected>=x[0][0]&&selected<=x[0][1]);weekIcon.textContent=x[3];weekNumber.textContent=selected;weekTitle.textContent=x[1];weekText.textContent=x[2];prev.disabled=selected===1;next.disabled=selected===42}prev.onclick=()=>{selected--;render()};next.onclick=()=>{selected++;render()};render();
 const text=()=>`Acompanhe a jornada do Rafael 🦁💛 Hoje ele está com ${week} semanas e ${day} dias. A chegada está prevista para 09/03/2027!`;
 async function share(){if(navigator.share)try{await navigator.share({title:'A Jornada do Rafael',text:text(),url:location.href});return}catch(e){}open('https://wa.me/?text='+encodeURIComponent(text()+' '+location.href),'_blank')}
-document.querySelector('#share').onclick=share;whatsapp.onclick=share;
+// document.querySelector('#share').onclick=share;whatsapp.onclick=share;
 let promptEvent;addEventListener('beforeinstallprompt',e=>{e.preventDefault();promptEvent=e;install.hidden=false});install.onclick=async()=>{if(promptEvent){promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;install.hidden=true}};
 function online(){offline.hidden=navigator.onLine}addEventListener('online',online);addEventListener('offline',online);online();if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
 
