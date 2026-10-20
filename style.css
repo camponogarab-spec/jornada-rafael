@@ -287,7 +287,7 @@ section>small {
     width: 100%;
     margin: auto;
     overflow: hidden;
-    background: #fff;
+    background: #f7e6c2;
     border: 6px solid #593c22;
     border-radius: 14px;
     box-shadow: 0 4px 12px #0003;
@@ -370,7 +370,6 @@ section>small {
 }
 
 .prayer-card h2 {
-    background: #f7e6c2;
     display: flex;
     align-items: center;
     justify-content: center;
