@@ -12,6 +12,28 @@ async function share(){if(navigator.share)try{await navigator.share({title:'A Jo
 let promptEvent;addEventListener('beforeinstallprompt',e=>{e.preventDefault();promptEvent=e;install.hidden=false});install.onclick=async()=>{if(promptEvent){promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;install.hidden=true}};
 function online(){offline.hidden=navigator.onLine}addEventListener('online',online);addEventListener('offline',online);online();if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
 
+const adventureImages=[
+  {src:'gravidez.jpg',alt:'Primeiro registro da aventura do Rafael',caption:'O início de uma aventura muito especial.',frameClass:'photo-gravidez'},
+  {src:'gif_gest1.gif',alt:'Registro da gestação',caption:'Rafael crescendo a cada nova fase da gestação.',frameClass:'photo-gest'},
+  {src:'gif_pe.gif',alt:'Registro de ultrassom do Rafael',caption:'Pequenos detalhes que tornam a espera ainda mais especial.',frameClass:'photo-pe'},
+  {src:'eco_morfo1.jpg',alt:'Ultrassom morfológico do Rafael',caption:'Um novo capítulo no desenvolvimento do Rafael.',frameClass:'photo-morfo'}
+];
+let adventureIndex=0;
+function renderAdventure(){
+  const item=adventureImages[adventureIndex];
+  adventureImage.src='';
+  adventureImage.src=item.src;
+  adventureImage.alt=item.alt;
+  photoWindow.className='photo-window '+item.frameClass;
+  adventureCaption.textContent=item.caption;
+  adventureCounter.textContent=`${adventureIndex+1} de ${adventureImages.length}`;
+  adventurePrev.disabled=adventureIndex===0;
+  adventureNext.disabled=adventureIndex===adventureImages.length-1;
+}
+adventurePrev.onclick=()=>{if(adventureIndex>0){adventureIndex--;renderAdventure()}};
+adventureNext.onclick=()=>{if(adventureIndex<adventureImages.length-1){adventureIndex++;renderAdventure()}};
+renderAdventure();
+
 // Canção de ninar original do Rafael, com controle de ativar e desativar.
 const lullaby = new Audio('./pequeno_leao_do_rafael.wav');
 lullaby.loop = true;
