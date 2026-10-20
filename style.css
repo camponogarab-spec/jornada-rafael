@@ -1,1 +1,446 @@
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#fff8e9;color:#33443a}header{background:linear-gradient(135deg,#436b4a,#587d50,#9c7b3e);color:#fff;padding:24px max(20px,calc((100% - 970px)/2)) 44px}nav,.row,.labels{display:flex;align-items:center;justify-content:space-between;gap:12px}.nav-actions{display:flex;flex-wrap:wrap;gap:8px}button{border:1px solid #cfae72;background:#fff;color:#436b4a;border-radius:999px;padding:11px 16px;font-weight:750;cursor:pointer}.music[aria-pressed="true"]{background:#ffe3a0;color:#36533b;box-shadow:0 0 0 3px #ffffff33}.hero{display:grid;grid-template-columns:1fr 240px;align-items:center;gap:24px;margin-top:42px}.hero h1{font-size:clamp(56px,9vw,82px);line-height:.9;margin:8px 0 20px}.hero p{font-size:20px;max-width:600px}.lion{width:220px;height:220px;border:10px solid #ffffff33;border-radius:50%;background:#ffe3a0;display:grid;place-items:center;font-size:120px}main{max-width:1010px;margin:auto;padding:30px 20px;display:grid;gap:28px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:#fff;border-radius:24px;padding:22px;box-shadow:0 4px 18px #5e533412}.card small,section>small{color:#b27627;font-weight:800;letter-spacing:.08em}.stat-icon{font-size:25px}.stat h3{font-size:24px;color:#436b4a;margin:10px 0 2px}.stat p{margin:0;color:#727b74}.progress{padding:30px}.pill{background:#eef3e8;padding:10px 14px;border-radius:999px}.bar{height:20px;background:#eee5d3;border-radius:999px;overflow:hidden;margin-top:20px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#e5a94c,#6c8e59);border-radius:999px}.labels{font-size:12px;color:#798178;margin-top:8px}.week{display:grid;grid-template-columns:220px 1fr;background:#fff0cc;border-radius:26px;overflow:hidden}.week-number{background:#e5a94c;color:#fff;padding:28px;display:grid;place-items:center}.week-number span{font-size:70px}.week-number strong{font-size:65px}.week-info{padding:32px}.week-info p{font-size:18px;line-height:1.65;min-height:90px}.two{grid-template-columns:1fr 1fr}.green{background:#436b4a;color:#fff}.animals{font-size:42px}.wa{font-size:36px;color:#25a766}.whatsapp{background:#25a766;color:#fff;border:0}.disclaimer,.notice{padding:16px;border-radius:16px;background:#f3e9d5}.notice{background:#fff0cc;border:1px solid #e5a94c}.rafael-adventures{text-align:center}.safari-frame{width:min(100%,720px);margin:auto;padding:22px;background:linear-gradient(145deg,#ead1a0,#f7e6c2 48%,#d9b77f);border:8px solid #6c4b2b;border-radius:30px;box-shadow:0 8px 24px #49391f33,inset 0 0 0 4px #f9edcf;position:relative;overflow:hidden}.safari-frame:before,.safari-frame:after{content:'🌿';position:absolute;font-size:58px;z-index:0}.safari-frame:before{left:-8px;top:6px;transform:rotate(-25deg)}.safari-frame:after{right:-8px;bottom:15px;transform:rotate(155deg)}.safari-frame-title{position:relative;z-index:1;display:inline-block;padding:8px 22px;background:#e5c891;border:2px solid #9b7445;border-radius:10px;color:#654321;font-family:Georgia,serif;font-size:clamp(25px,5vw,38px);font-weight:700;box-shadow:0 3px 8px #60431e33}.safari-frame-explore{position:relative;z-index:1;margin:8px 0 14px;color:#7a552d;font-family:Georgia,serif;font-size:20px;font-weight:700}.photo-window{position:relative;z-index:1;width:100%;margin:auto;overflow:hidden;background:#fff;border:6px solid #593c22;border-radius:14px;box-shadow:0 4px 12px #0003;aspect-ratio:1195/896}.photo-window.photo-morfo{aspect-ratio:619/657}.photo-window.photo-pe{aspect-ratio:640/409}.photo-window.photo-gest{aspect-ratio:640/376}.photo-window img{width:100%;height:100%;object-fit:fill;display:block}.adventure-caption{position:relative;z-index:1;margin:12px auto 8px;color:#5f4328;font-size:15px;line-height:1.4;font-weight:700;text-align:center;min-height:21px}.safari-decoration{position:relative;z-index:1;font-size:30px;letter-spacing:7px;margin:4px 0}.safari-frame-bottom{position:relative;z-index:1;display:inline-block;padding:7px 20px;background:#dfc18b;border:2px solid #916a3d;border-radius:8px;color:#654321;font-family:Georgia,serif;font-size:22px;font-weight:800}.adventure-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:16px}.adventure-controls span{min-width:54px;color:#798178;font-weight:750}.prayer-card{background:#fff;border-radius:24px;padding:22px;box-shadow:0 4px 18px #5e533412;text-align:center}.prayer-card h2{display:flex;align-items:center;justify-content:center;gap:10px;color:#436b4a;margin:0 0 18px}.prayer-card img{display:block;max-width:100%;height:auto;margin:auto;border-radius:16px}footer{text-align:center;padding:25px;color:#768278}@media(max-width:760px){nav{align-items:flex-start;flex-direction:column}.hero{grid-template-columns:1fr;text-align:center}.lion{width:180px;height:180px;font-size:95px;margin:auto}.cards{grid-template-columns:1fr 1fr}.week{grid-template-columns:1fr}.two{grid-template-columns:1fr}}@media(max-width:430px){.cards{grid-template-columns:1fr}.hero h1{font-size:58px}.week-info{padding:24px}.nav-actions{width:100%}.nav-actions button{flex:1}}
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+    background: #fff8e9;
+    color: #33443a
+}
+
+header {
+    background: linear-gradient(135deg, #436b4a, #587d50, #9c7b3e);
+    color: #fff;
+    padding: 24px max(20px, calc((100% - 970px)/2)) 44px
+}
+
+nav,
+.row,
+.labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px
+}
+
+.nav-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+button {
+    border: 1px solid #cfae72;
+    background: #fff;
+    color: #436b4a;
+    border-radius: 999px;
+    padding: 11px 16px;
+    font-weight: 750;
+    cursor: pointer
+}
+
+.music[aria-pressed="true"] {
+    background: #ffe3a0;
+    color: #36533b;
+    box-shadow: 0 0 0 3px #ffffff33
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    align-items: center;
+    gap: 24px;
+    margin-top: 42px
+}
+
+.hero h1 {
+    font-size: clamp(56px, 9vw, 82px);
+    line-height: .9;
+    margin: 8px 0 20px
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px
+}
+
+.lion {
+    width: 220px;
+    height: 220px;
+    border: 10px solid #ffffff33;
+    border-radius: 50%;
+    background: #ffe3a0;
+    display: grid;
+    place-items: center;
+    font-size: 120px
+}
+
+main {
+    max-width: 1010px;
+    margin: auto;
+    padding: 30px 20px;
+    display: grid;
+    gap: 28px
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px
+}
+
+.card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 4px 18px #5e533412
+}
+
+.card small,
+section>small {
+    color: #b27627;
+    font-weight: 800;
+    letter-spacing: .08em
+}
+
+.stat-icon {
+    font-size: 25px
+}
+
+.stat h3 {
+    font-size: 24px;
+    color: #436b4a;
+    margin: 10px 0 2px
+}
+
+.stat p {
+    margin: 0;
+    color: #727b74
+}
+
+.progress {
+    padding: 30px
+}
+
+.pill {
+    background: #eef3e8;
+    padding: 10px 14px;
+    border-radius: 999px
+}
+
+.bar {
+    height: 20px;
+    background: #eee5d3;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 20px
+}
+
+.bar i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #e5a94c, #6c8e59);
+    border-radius: 999px
+}
+
+.labels {
+    font-size: 12px;
+    color: #798178;
+    margin-top: 8px
+}
+
+.week {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    background: #fff0cc;
+    border-radius: 26px;
+    overflow: hidden
+}
+
+.week-number {
+    background: #e5a94c;
+    color: #fff;
+    padding: 28px;
+    display: grid;
+    place-items: center
+}
+
+.week-number span {
+    font-size: 70px
+}
+
+.week-number strong {
+    font-size: 65px
+}
+
+.week-info {
+    padding: 32px
+}
+
+.week-info p {
+    font-size: 18px;
+    line-height: 1.65;
+    min-height: 90px
+}
+
+.two {
+    grid-template-columns: 1fr 1fr
+}
+
+.green {
+    background: #436b4a;
+    color: #fff
+}
+
+.animals {
+    font-size: 42px
+}
+
+.wa {
+    font-size: 36px;
+    color: #25a766
+}
+
+.whatsapp {
+    background: #25a766;
+    color: #fff;
+    border: 0
+}
+
+.disclaimer,
+.notice {
+    padding: 16px;
+    border-radius: 16px;
+    background: #f3e9d5
+}
+
+.notice {
+    background: #fff0cc;
+    border: 1px solid #e5a94c
+}
+
+.rafael-adventures {
+    text-align: center
+}
+
+.safari-frame {
+    width: min(100%, 720px);
+    margin: auto;
+    padding: 22px;
+    background: linear-gradient(145deg, #ead1a0, #f7e6c2 48%, #d9b77f);
+    border: 8px solid #6c4b2b;
+    border-radius: 30px;
+    box-shadow: 0 8px 24px #49391f33, inset 0 0 0 4px #f9edcf;
+    position: relative;
+    overflow: hidden
+}
+
+.safari-frame:before,
+.safari-frame:after {
+    content: '🌿';
+    position: absolute;
+    font-size: 58px;
+    z-index: 0
+}
+
+.safari-frame:before {
+    left: -8px;
+    top: 6px;
+    transform: rotate(-25deg)
+}
+
+.safari-frame:after {
+    right: -8px;
+    bottom: 15px;
+    transform: rotate(155deg)
+}
+
+.safari-frame-title {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 8px 22px;
+    background: #e5c891;
+    border: 2px solid #9b7445;
+    border-radius: 10px;
+    color: #654321;
+    font-family: Georgia, serif;
+    font-size: clamp(25px, 5vw, 38px);
+    font-weight: 700;
+    box-shadow: 0 3px 8px #60431e33
+}
+
+.safari-frame-explore {
+    position: relative;
+    z-index: 1;
+    margin: 8px 0 14px;
+    color: #7a552d;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.photo-window {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: #fff;
+    border: 6px solid #593c22;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px #0003;
+    aspect-ratio: 1195/896
+}
+
+.photo-window.photo-morfo {
+    aspect-ratio: 619/657
+}
+
+.photo-window.photo-pe {
+    aspect-ratio: 640/409
+}
+
+.photo-window.photo-gest {
+    aspect-ratio: 640/376
+}
+
+.photo-window img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block
+}
+
+.adventure-caption {
+    position: relative;
+    z-index: 1;
+    margin: 12px auto 8px;
+    color: #5f4328;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: center;
+    min-height: 21px
+}
+
+.safari-decoration {
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    letter-spacing: 7px;
+    margin: 4px 0
+}
+
+.safari-frame-bottom {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 7px 20px;
+    background: #dfc18b;
+    border: 2px solid #916a3d;
+    border-radius: 8px;
+    color: #654321;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 800
+}
+
+.adventure-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 16px
+}
+
+.adventure-controls span {
+    min-width: 54px;
+    color: #798178;
+    font-weight: 750
+}
+
+.prayer-card {
+    background: #f7e6c2;
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 4px 18px #5e533412;
+    text-align: center
+}
+
+.prayer-card h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #436b4a;
+    margin: 0 0 18px
+}
+
+.prayer-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 16px
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #768278
+}
+
+@media(max-width:760px) {
+    nav {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center
+    }
+
+    .lion {
+        width: 180px;
+        height: 180px;
+        font-size: 95px;
+        margin: auto
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .week {
+        grid-template-columns: 1fr
+    }
+
+    .two {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:430px) {
+    .cards {
+        grid-template-columns: 1fr
+    }
+
+    .hero h1 {
+        font-size: 58px
+    }
+
+    .week-info {
+        padding: 24px
+    }
+
+    .nav-actions {
+        width: 100%
+    }
+
+    .nav-actions button {
+        flex: 1
+    }
+}
