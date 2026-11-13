@@ -18,7 +18,7 @@ const adventureImages=[
   {src:'gif_pe.gif',alt:'Registro de ultrassom do Rafael',caption:'Pequenos detalhes que tornam a espera ainda mais especial.',frameClass:'photo-pe'},
   {src:'eco_morfo1.jpg',alt:'Ultrassom morfológico do Rafael',caption:'Um novo capítulo no desenvolvimento do Rafael.',frameClass:'photo-morfo'},
   {src:'Nome.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'A confirmação do meu nome 🦁Rafael.🦁',frameClass:'photo-Nome'},
-  {src:'BOY.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'Descobriram que sou um meninão Lindo.👶',frameClass:'photo-BOY'},
+  {src:'BOY.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'Descobriram que sou um meninão lindo.👶',frameClass:'photo-BOY'},
   {src:'BPM.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'Meu coração batendo muito forte e saudável.💙',frameClass:'photo-BPM'},
   {src:'3D.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'Para todos verem como eu sou lindão.🦁',frameClass:'photo-3D'}
 ];
