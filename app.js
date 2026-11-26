@@ -21,7 +21,7 @@ const adventureImages=[
   {src:'BOY.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'Descobriram que sou um meninão lindo.👶',frameClass:'photo-BOY'},
   {src:'BPM.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'Meu coração batendo muito forte e saudável.💙',frameClass:'photo-BPM'},
   {src:'3D.gif',alt:'Ultrassom morfológico2 do Rafael',caption:'Para todos verem como eu sou lindão.🦁',frameClass:'photo-3D'},
-  {src:'Gremistinha.png',alt:'O meu time de futebol do Papai e da Mamãe!💙',caption:'Já sou mais um torçedor do imortal tricolor.🇪🇪',frameClass:'photo-3D'}
+  {src:'Gremistinha.png',alt:'O meu time de futebol!',caption:'Já sou mais um torçedor do imortal 💙tricolor.🇪🇪',frameClass:'photo-Gremistinha'}
 ];
 let adventureIndex=0;
 function renderAdventure(){
